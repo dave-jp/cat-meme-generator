@@ -1,12 +1,17 @@
 html, body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+    background-color: #fefae0;
 }
+
+
+/* header style */
 
 .header-inner {
     height: 150px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    background-color: #606c38;    
 }
 
 .header-pic {
@@ -22,8 +27,11 @@ html, body {
 }
 h1, h2 {
     margin: 0 0 0 5px;
+    color: #dda15e;
 }
-
 h2 {
-    margin-top: 85px;
+    margin-top: 25px;
+}
+.enlarge {
+    font-size:50px;
 }
