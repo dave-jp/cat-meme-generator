@@ -35,3 +35,12 @@ h2 {
 .enlarge {
     font-size:50px;
 }
+
+/* emotion container */
+
+.emotion-container {
+    width: 300px;   
+    border: solid black 3px;
+    margin: auto;
+    margin-top: 50px;
+}
