@@ -185,22 +185,19 @@ function getEmotionsArray() {
 
 
 
+
 function renderEmotionsArray() {
-    let displayEmotions = ''
+    
     let emotions = getEmotionsArray()
-    for (let emotion of emotions) {
-        displayEmotions += `
-        <div class="radio">
-        <label for="${emotion}">${emotion}</label>
-        <input
-        type="radio"
-        id="${emotion}"
-        value="${emotion}"
-        name="emotions"
-        >
-    </div>`
+
+    for (let emotion of emotions){
+    emotionRadios.innerHTML += `
+    <div class="radio">
+        <label for="${emotion}" class="emotion-radio">${emotion}</label>
+        <input type="radio" id="emotions">
+    </div>
+    `
     }
-    emotionRadios.innerHTML = displayEmotions
 }
 
 renderEmotionsArray()
