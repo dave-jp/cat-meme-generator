@@ -25,22 +25,55 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
 h1, h2 {
     margin: 0 0 0 5px;
     color: #dda15e;
 }
+
 h2 {
     margin-top: 25px;
 }
+
 .enlarge {
     font-size:50px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
 }
 
 /* emotion container */
 
 .emotion-container {
-    width: 300px;   
-    border: solid black 3px;
-    margin: auto;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px auto;
 }
+
+.emotion-radios {  
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(163, 98, 12);
+    border-radius: 5px;
+}
+
+.emotion-radio{
+    width: 100%;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: rgb(163, 98, 12) 2px solid;
+    padding: 10px 8px;
+}
+
+.radio:nth-last-child(1){
+    border-bottom: none;
+}
+
