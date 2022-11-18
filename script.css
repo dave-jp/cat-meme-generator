@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     font-family: 'Karla', sans-serif;
-    background-color: #fefae0;
+    background-color: wheat;
 }
 
 
@@ -19,6 +19,7 @@ html, body {
     display: flex;
     margin:auto 0;
     border-radius: 20%;
+    border: 2px wheat solid;
 }
 
 .header-title {
@@ -72,6 +73,7 @@ h3 {
     border-bottom: rgb(163, 98, 12) 2px solid;
     padding: 10px 8px;
 }
+
 
 .radio:nth-last-child(1){
     border-bottom: none;
