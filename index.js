@@ -15,19 +15,20 @@ function getEmotionsArray() {
     return emotionsArray
 }
 
-
-
-// render the emotions out on to the page
+// render the emotions out on to the page from getEmotionsArray
 function renderEmotionsArray() {
     let emotions = getEmotionsArray()
     for (let emotion of emotions){
     emotionRadios.innerHTML += `
     <div class="radio">
         <label for="${emotion}" class="emotion-radio">${emotion}</label>
-        <input type="radio" id="${emotions} class="radio-button">
+        <input type="radio" id="${emotions} class="radio-button" name="emotion-radios">
     </div>
     `
     }
 }
 
+// create a function that changes the colour of the radio parent that has been selected
+
 renderEmotionsArray()
+

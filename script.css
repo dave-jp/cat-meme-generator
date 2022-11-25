@@ -72,10 +72,32 @@ h3 {
     padding-bottom: 12px;
     border-bottom: rgb(163, 98, 12) 2px solid;
     padding: 10px 8px;
+    accent-color: #606c38;
 }
-
 
 .radio:nth-last-child(1){
     border-bottom: none;
 }
+
+
+/* gifs check and submit button */
+.gifs-check {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    accent-color: #606c38;
+}
+
+button {
+    align-self: center;
+    padding: 4px 25px;
+    border-radius: 5px;
+    border: solid rgb(163,98,12) 2px;
+    background-color: #606c38;
+    color:#dda15e;
+    font-weight:bolder;
+    letter-spacing: 1px;
+}
+
+
 
