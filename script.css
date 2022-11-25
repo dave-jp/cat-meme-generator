@@ -99,5 +99,10 @@ button {
     letter-spacing: 1px;
 }
 
-
+.highlight{
+    background-color: #fff0ee;
+    color: #bd301d;
+    font-weight: bold;
+    accent-color: #bd301d;
+}
 
