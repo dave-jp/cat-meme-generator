@@ -106,4 +106,49 @@ button {
     letter-spacing: 1px;
 }
 
+/* image container */
+.image-reel-container{
+    top: 225px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 457px;
+    border: solid rgb(163,98,12) 2px;
+    border-radius: 5%;
+    background-color: wheat;
+    /* display: none; */
+}
 
+.close-images {
+    position: absolute;
+    right:10px;
+    top: 10px;
+    border: solid rgb(163,98,12) 2px;
+    background-color: wheat;
+    border-radius: 50%;
+    padding: 3px;
+    font-weight: bolder;
+    color: rgb(163,98,12);
+}
+
+.close-images:hover {
+    background-color: #dda15e;
+    cursor: pointer;
+}
+
+.copy-image-cont {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+
+.copy-image-btn {
+    color: wheat;
+    cursor: pointer;
+}
