@@ -4,12 +4,16 @@ const emotionRadios = document.getElementById('emotion-radios')
 
 emotionRadios.addEventListener('change', highlightSelectedOption)
 
-// create a function that changes the colour of the radio parent that has been selected
+// highlight the selected emotion
 function highlightSelectedOption(e) {
-    console.log(e.target.id)
+    let radio = document.getElementsByClassName('radio')
+    for (let radios of radio) {
+        radios.classList.remove('highlight')
+    }
+document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
-// function iterates over object and pulls emotion tags only if they are not already shown
+// iterate over data.js and pulls emotion only if they are not already shown
 function getEmotionsArray() {
     const emotionsArray = []
     for (let emotions of catsData){
@@ -29,8 +33,8 @@ function renderEmotionsArray() {
     for (let emotion of emotions){
     emotionArray += `
     <div class="radio">
-        <label for="${emotion}">${emotion}</label>
-        <input type="radio" id="${emotion}" value="${emotion}" name="emotion-radios">
+        <label for="${emotion}" class="emotion-label">${emotion}</label>
+        <input type="radio" class="emotion-selector" id="${emotion}" value="${emotion}" name="emotion-radios">
     </div>
     `
     }

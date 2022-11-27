@@ -56,20 +56,19 @@ h3 {
 }
 
 .emotion-radios {  
-    display: flex;
-    flex-direction: column;
     border: 2px solid rgb(163, 98, 12);
     border-radius: 5px;
 }
 
-.emotion-radio{
-    width: 100%;
+.emotion-label{
+    cursor: pointer;
+}
+
+.emotion-selector{
+    cursor: pointer;
 }
 
 .radio{
-    display: flex;
-    align-items: center;
-    padding-bottom: 12px;
     border-bottom: rgb(163, 98, 12) 2px solid;
     padding: 10px 8px;
     accent-color: #606c38;
@@ -78,6 +77,14 @@ h3 {
 .radio:nth-last-child(1){
     border-bottom: none;
 }
+
+.highlight{
+    background-color: #606c38;
+    color: #dda15e;
+    font-weight: bold;
+    accent-color: rgb(163, 98, 12);
+}
+
 
 
 /* gifs check and submit button */
@@ -99,10 +106,4 @@ button {
     letter-spacing: 1px;
 }
 
-.highlight{
-    background-color: #fff0ee;
-    color: #bd301d;
-    font-weight: bold;
-    accent-color: #bd301d;
-}
 
