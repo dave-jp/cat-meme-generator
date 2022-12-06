@@ -1,8 +1,13 @@
 import { catsData } from "./data.js"
 
+// assigning document elements
 const emotionRadios = document.getElementById('emotion-radios')
 
+const closeImages = document.getElementById('close-images')
+
+// events
 emotionRadios.addEventListener('change', highlightSelectedOption)
+
 
 // highlight the selected emotion
 function highlightSelectedOption(e) {
@@ -26,6 +31,8 @@ function getEmotionsArray() {
     return emotionsArray
 }
 
+console.log(getEmotionsArray())
+
 // render the emotions out on to the page from getEmotionsArray
 function renderEmotionsArray() {
     let emotionArray = ''
@@ -40,6 +47,11 @@ function renderEmotionsArray() {
     }
     emotionRadios.innerHTML += emotionArray
 }
+
+// open the image container with a fade in transition
+
+
+// close the image container with a fade out transition
 
 
 renderEmotionsArray()

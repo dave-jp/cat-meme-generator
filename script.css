@@ -121,7 +121,7 @@ button {
     border: solid rgb(163,98,12) 2px;
     border-radius: 5%;
     background-color: wheat;
-    /* display: none; */
+    display: none;
 }
 
 .close-images {
