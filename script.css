@@ -101,7 +101,7 @@ button {
     border-radius: 5px;
     border: solid rgb(163,98,12) 2px;
     background-color: #606c38;
-    color:#dda15e;
+    color: wheat;
     font-weight:bolder;
     letter-spacing: 1px;
 }
@@ -121,7 +121,11 @@ button {
     border: solid rgb(163,98,12) 2px;
     border-radius: 5%;
     background-color: wheat;
-    display: none;
+    visibility: hidden;
+}
+
+#get-images-btn {
+    cursor: pointer;
 }
 
 .close-images {
@@ -151,4 +155,17 @@ button {
 .copy-image-btn {
     color: wheat;
     cursor: pointer;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+  }
+
+.invisible {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 0.5s linear;
+        border: none;
 }

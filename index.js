@@ -2,11 +2,13 @@ import { catsData } from "./data.js"
 
 // assigning document elements
 const emotionRadios = document.getElementById('emotion-radios')
-
+const getImageBtn = document.getElementById('get-images-btn')
 const closeImages = document.getElementById('close-images')
 
 // events
 emotionRadios.addEventListener('change', highlightSelectedOption)
+getImageBtn.addEventListener('click', openImageContainer)
+closeImages.addEventListener('click', closeImageContainer)
 
 
 // highlight the selected emotion
@@ -31,8 +33,6 @@ function getEmotionsArray() {
     return emotionsArray
 }
 
-console.log(getEmotionsArray())
-
 // render the emotions out on to the page from getEmotionsArray
 function renderEmotionsArray() {
     let emotionArray = ''
@@ -49,9 +49,20 @@ function renderEmotionsArray() {
 }
 
 // open the image container with a fade in transition
+function openImageContainer(){
+    document.getElementById('image-reel-container').classList.add('visible')
+    document.getElementById('image-reel-container').classList.remove('invisible')
+}
 
+// return images based on what has been selected
+function returnImageArray() {
+    
+}
 
 // close the image container with a fade out transition
+function closeImageContainer() {
+    document.getElementById('image-reel-container').classList.add('invisible')
+    document.getElementById('image-reel-container').classList.remove('visible')
 
-
+}
 renderEmotionsArray()
